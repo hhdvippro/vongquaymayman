@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Quay May Mắn Tùy Chỉnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vòng Quay May Mắn</h1>
+        
+        <div class="wheel-container">
+            <canvas id="wheel" width="500" height="500"></canvas>
+            <div class="spin-btn" id="spin-btn">QUAY</div>
+            <div class="pointer"></div>
+        </div>
+        
+        <div class="controls">
+            <h2>Tùy Chỉnh Vòng Quay</h2>
+            
+            <div class="items-container" id="items-container">
+                <!-- Các mục sẽ được thêm vào đây bằng JavaScript -->
+            </div>
+            
+            <button id="add-item">Thêm Mục</button>
+            <button id="reset-wheel">Đặt Lại</button>
+            
+            <div class="fixed-result">
+                <h3>Chỉ định kết quả</h3>
+                <select id="fixed-result-select"></select>
+                <button id="spin-to-fixed">Quay đến kết quả này</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
